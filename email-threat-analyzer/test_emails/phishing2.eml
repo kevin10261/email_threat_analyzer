@@ -1,0 +1,25 @@
+Return-Path: <alerts@paypal.com>
+Received: from mail.paypal.com (mail.paypal.com [172.217.212.5])
+    by mail.example.com with ESMTPS id pp123456
+    for <you@example.com>; Wed, 19 Jun 2025 16:10:02 -0600
+From: PayPal <alerts@paypal.com>
+Reply-To: alerts@paypal.com
+To: you@example.com
+Subject: [Security Alert] Your account is limited
+Date: Wed, 19 Jun 2025 16:10:02 -0600
+Message-ID: <pp7890@mail.paypal.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Authentication-Results: mail.example.com;
+    spf=pass smtp.mailfrom=paypal.com;
+    dkim=pass header.d=paypal.com;
+    dmarc=pass header.from=paypal.com;
+
+Dear Customer,
+
+We’ve noticed suspicious activity in your PayPal account. As a precaution, we’ve temporarily limited your account.
+
+Please verify your identity and remove the limitation:
+http://malicious-site.bad/phish/paypal-update
+
+Thank you for using PayPal.

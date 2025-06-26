@@ -1,0 +1,26 @@
+Return-Path: <attacker@spoofed.com>
+Received: from unknown123456.com (unknown123456.com [93.184.216.34])
+    by mail.example.com with ESMTP id abc123
+    for <victim@example.com>; Wed, 19 Jun 2025 14:28:53 -0600
+From: "Bank Security" <support@fakesecurity.com>
+Reply-To: alert@secure-update-info.com
+To: victim@example.com
+Subject: [URGENT] Confirm Your Account Immediately
+Date: Wed, 19 Jun 2025 14:28:53 -0600
+Message-ID: <1234567890@mail.spoofed.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Authentication-Results: mail.example.com;
+    spf=fail (sender IP is 93.184.216.34) smtp.mailfrom=spoofed.com;
+    dkim=fail header.d=fakesecurity.com;
+    dmarc=fail action=quarantine header.from=fakesecurity.com;
+
+Dear user,
+
+We noticed unusual activity on your bank account. Please confirm your identity immediately to avoid suspension.
+
+Click the link below to verify your account:
+http://bit.ly/secure-login-check
+
+Thank you,  
+Bank Security Team

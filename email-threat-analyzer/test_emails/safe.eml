@@ -1,0 +1,29 @@
+Return-Path: <notifications@github.com>
+Received: from mail.github.com (mail.github.com [140.82.112.1])
+    by mail.example.com with ESMTPS id gh123456
+    for <you@example.com>; Wed, 19 Jun 2025 10:15:22 -0600
+From: GitHub <notifications@github.com>
+Reply-To: noreply@github.com
+To: you@example.com
+Subject: New login from Chrome on Windows
+Date: Wed, 19 Jun 2025 10:15:22 -0600
+Message-ID: <gh7890@mail.github.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Authentication-Results: mail.example.com;
+    spf=pass smtp.mailfrom=github.com;
+    dkim=pass header.d=github.com;
+    dmarc=pass header.from=github.com;
+
+Hi there,
+
+We noticed a new sign-in to your GitHub account from a new device:
+
+Location: Canada
+Browser: Chrome
+OS: Windows
+
+If this was you, you can safely ignore this email. If not, [reset your password](https://github.com/password_reset).
+
+Thanks,  
+The GitHub Team

@@ -1,0 +1,138 @@
+Delivered-To: kyyse1026@gmail.com
+Received: by 2002:a05:6000:144b:b0:3a4:ec1c:f894 with SMTP id v11csp378203wrx;
+        Thu, 19 Jun 2025 13:22:03 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGiVjbFSJc2/YDjuADDXyuDMHkpvE8Utfur43aBoRhBFXQbHex84OgcC+tKgMJDmzbUwrkc
+X-Received: by 2002:a05:6a21:9010:b0:21f:53e4:1925 with SMTP id adf61e73a8af0-22026e87f1fmr350457637.10.1750364523263;
+        Thu, 19 Jun 2025 13:22:03 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750364523; cv=none;
+        d=google.com; s=arc-20240605;
+        b=XgwAJ/J2Aky48ywKzgrHwKdH1ZIGa+PcpHaLkmyjaa3kVUzZuicjotLVya/KUQ8H4d
+         eF+W5NLb/Knco7QE/JLXcPfbXyfYh8Jlb1iF2UajsdECRyw1AFrSs2IYUvvR+RT+oJlJ
+         eOYpRkcNw5+NI+4u23ITs/lpsqihGW2HT45BllZCXyfkq8wgNPjfpH//u/5hA0OXa0Ph
+         MOfZCoKbeM2llIxwhvL3/HgaZI3J8pX1Dp4umIIOMgCTjcVQU1oaqL9yh0IOu2YBhfHc
+         R8II/prSgXeRoYmTdGcOPyoGrrc+peYHg4QQlYhWAtQLLq/E+5wkHl12RTX4m+CukNDP
+         7ZIA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=importance:mime-version:subject:message-id:to:from:date
+         :dkim-signature:dkim-filter;
+        bh=C26Ev7A2vMPgsAjVdthqGPE8XyvuyE1GX84rVxr7s+g=;
+        fh=zotTmj/KTp0QdmKBgdDLphwEQ++F608qcVSysW/KRSU=;
+        b=LmYIjoliSsdWmkQyN6V/4o5KY1cBvmxOS4F/4VAOuTBExAgMdP6pvbtRXvv+eW6sTA
+         tQvGHpuK2wyn87zz7fNNuytfVfHqtM6/jKFLmUToCXhevbtKvqfc0Xw92zcbhwFs3C9d
+         vKkFbPWNBioaP4V0soEU1zvdm5I7uaL200KjjzYck2HLSnDH1zoC2sKhMCk8WUpvHwK8
+         /5J2zr4caxbAsAukVz4Eu+HPtNkemNPARldq4oN40n82lJFhd7g6u3q7LThpu7aLMrPk
+         9j2D5mbfKTzaTXdNA3+J0A3GVzl08iCkYH25MvEdZI1yGjlaYTC83KGSXHnS6Mq19bj9
+         Z6Ow==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@recruit.starbucks.com header.s=dktaleo22020921 header.b=IsON3ZAE;
+       spf=pass (google.com: domain of starbucksrecruiting@recruit.starbucks.com designates 138.1.127.67 as permitted sender) smtp.mailfrom=StarbucksRecruiting@recruit.starbucks.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=starbucks.com
+Return-Path: <StarbucksRecruiting@recruit.starbucks.com>
+Received: from phxcrelay.taleo.net (phxcrelay.taleo.net. [138.1.127.67])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-b31f132d476si321159a12.557.2025.06.19.13.22.02
+        for <kyyse1026@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 19 Jun 2025 13:22:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of starbucksrecruiting@recruit.starbucks.com designates 138.1.127.67 as permitted sender) client-ip=138.1.127.67;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@recruit.starbucks.com header.s=dktaleo22020921 header.b=IsON3ZAE;
+       spf=pass (google.com: domain of starbucksrecruiting@recruit.starbucks.com designates 138.1.127.67 as permitted sender) smtp.mailfrom=StarbucksRecruiting@recruit.starbucks.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=starbucks.com
+Received: from phxc1b-app-017.a.phxc.oraclevcn.com (host-10-128-56-252.n.phxc.oraclevcn.com [10.128.56.252])
+	by phxcrelay.taleo.net (Postfix) with ESMTPS id A116B83BE6
+	for <kyyse1026@gmail.com>; Thu, 19 Jun 2025 16:22:02 -0400 (EDT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 phxcrelay.taleo.net A116B83BE6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+	d=recruit.starbucks.com; s=dktaleo22020921; t=1750364522;
+	x=1750796522; bh=C26Ev7A2vMPgsAjVdthqGPE8XyvuyE1GX84rVxr7s+g=;
+	h=Date:From:To:Subject:From;
+	b=IsON3ZAEa6biTB/tbVITtXRuTPrfhdBCusdqn6fryj8dfLPuRFbf0pvTCg/44JkYT
+	 dTN/MliThlzdUff/ws7IxMJ9L6Jwp9Qy/5iNXXAzRk3hR71A82HuNkQAD4FSjJkpir
+	 R+iNwQygJFQU3SumGsT+IdUS4OM8v+66nMDMbw4jzviEuXCXsbYd7vz/92QdSSVS8H
+	 IpWOv4AsL/Pl1XmIzBPKQX17IY51M/kclCm0DPqwzEMKz0OCIK5Nt4wJAlsap29Q2u
+	 qZmZmQl/DxPVnZQTIJ3g43pLj+IfVrcw+CBhlg8GdXuw+zS++zafI/VRDdu0BB1UZf
+	 6oLiKdvVPAW7A==
+Received: from phxc1b-app-017.a.phxc.oraclevcn.com (localhost [127.0.0.1])
+	by phxc1b-app-017.a.phxc.oraclevcn.com (Postfix) with ESMTP id 94C4E800F2
+	for <kyyse1026@gmail.com>; Thu, 19 Jun 2025 16:22:02 -0400 (EDT)
+Date: Thu, 19 Jun 2025 16:22:02 -0400 (EDT)
+From: Starbucks Talent Acquisition
+ <StarbucksRecruiting@recruit.starbucks.com>
+To: kyyse1026@gmail.com, Seongeun Yu <kyyse1026@gmail.com>
+Message-ID: <1987583735.657243.1750364522608@127.0.0.1>
+Subject: Thank you for your interest in Starbucks
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_657242_1139303021.1750364522606"
+X-Priority: 3
+X-MSMail-Priority: Normal
+Importance: normal
+
+------=_Part_657242_1139303021.1750364522606
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title></title>
+</head>
+<body style='font-family: Arial, Times New Roman, Verdana, Sans-Serif; padding: 5px 5px 5px 5px; margin: 0px; border-style: none; background-color: #ffffff'>
+<div><p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em"><img src= "https://starbucks.taleo.net/custom/images/company_logo_01.gif"> </img></span></span></p>
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em">&nbsp;</span></span></p>
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em">&nbsp;</span></span></p>
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em">&nbsp;</span></span></p></div><div><div>
+<div>
+<div>Hello Kevin,&nbsp;</div>
+<div>&nbsp;</div>
+<div>Thank you for completing an application for the barista - Store# 52379, HERITAGE VALLEY opening and considering opportunities at Starbucks. While we appreciate the time you took to apply, your application indicates you do not meet one or more of the basic requirements, so you have not been selected to move forward in the interview process for this position.&nbsp;</div>
+<div><br />
+</div>
+<div>We hope you consider applying again soon. Please visit <a href="http://www.starbucks.com/careers">starbucks.com/careers</a> to explore additional opportunities.&nbsp;</div>
+</div>
+<div style="font-family: Arial; font-size: medium;"><br />
+</div>
+</div></div><div><div>&nbsp;</div>
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em">Warm Regards,</span></span></p>
+<div>Starbucks<span style="font-size:1em">&nbsp;Recruiting Team</span><span style="font-size:1em"><br />
+</span></div>
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em">&nbsp;</span></span></p></div><div><p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:0.833em"><em>This message is from an unmonitored mailbox; please do not reply to it.</em></span></span></p></div><div><p style="margin-top: 0px; margin-bottom: 0px;"><br />
+</p></div></body>
+</html>
+
+------=_Part_657242_1139303021.1750364522606
+Content-Type: application/octet-stream; name=this_message_in_html.htm
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename=this_message_in_html.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title></title>
+</head>
+<body style='font-family: Arial, Times New Roman, Verdana, Sans-Serif; padding: 5px 5px 5px 5px; margin: 0px; border-style: none; background-color: #ffffff'>
+<div><p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em"><img src= "https://starbucks.taleo.net/custom/images/company_logo_01.gif"> </img></span></span></p>
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em">&nbsp;</span></span></p>
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em">&nbsp;</span></span></p>
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em">&nbsp;</span></span></p></div><div><div>
+<div>
+<div>Hello Kevin,&nbsp;</div>
+<div>&nbsp;</div>
+<div>Thank you for completing an application for the barista - Store# 52379, HERITAGE VALLEY opening and considering opportunities at Starbucks. While we appreciate the time you took to apply, your application indicates you do not meet one or more of the basic requirements, so you have not been selected to move forward in the interview process for this position.&nbsp;</div>
+<div><br />
+</div>
+<div>We hope you consider applying again soon. Please visit <a href="http://www.starbucks.com/careers">starbucks.com/careers</a> to explore additional opportunities.&nbsp;</div>
+</div>
+<div style="font-family: Arial; font-size: medium;"><br />
+</div>
+</div></div><div><div>&nbsp;</div>
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em">Warm Regards,</span></span></p>
+<div>Starbucks<span style="font-size:1em">&nbsp;Recruiting Team</span><span style="font-size:1em"><br />
+</span></div>
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:1em">&nbsp;</span></span></p></div><div><p style="margin-top: 0px; margin-bottom: 0px;"><span style="font-family:arial"><span style="font-size:0.833em"><em>This message is from an unmonitored mailbox; please do not reply to it.</em></span></span></p></div><div><p style="margin-top: 0px; margin-bottom: 0px;"><br />
+</p></div></body>
+</html>
+
+------=_Part_657242_1139303021.1750364522606--
