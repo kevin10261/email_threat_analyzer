@@ -4,7 +4,7 @@ import requests
 import time
 from urllib.parse import urlparse
 
-API_KEY = "0197a8af-1e83-7542-87bb-376fe07dbe46"
+API_KEY = "INSERT_API_KEY"
 HEADERS = {'API-Key': API_KEY, 'Content-Type': 'application/json'}
 
 # This function extracts links from the email body, filters out image URLs, and returns a list of cleaned URLs.
